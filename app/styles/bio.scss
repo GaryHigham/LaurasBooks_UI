@@ -1,0 +1,59 @@
+.laurasbooks-nav{
+	margin-bottom: 0;
+	background-color: #fff;
+	border-bottom: 0;
+}
+
+.laurasbooks-nav--title {
+	font-weight: 500;
+	color: #563d7c;	
+}
+
+.laurasbooks-nav--entry {
+	color: #563d7c;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.lead--titleone {
+	position: absolute;
+	top: 15px;
+	left: 64px;
+	width: 60%;
+}
+
+.highlight {
+	background: rgb(0, 0, 0); /* fallback color */
+   	background: rgba(0, 0, 0, 0.5);
+}
+
+
+.bio {
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #6f5499;
+	height: 793px;
+	overflow: hidden;
+}
+
+.lead {
+	font-size: 30px;
+}
+
+.lead--white {
+	color: #fff;
+}
+
+.novels {	
+    background-color: #cccccc;
+    height: 800px;
+    overflow: hidden;
+}
+
+.background-image {
+	display: inline-block;
+	max-width: 100%;
+}

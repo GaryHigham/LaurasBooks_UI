@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bio.css">
     <!-- endbuild -->
   </head>
   <body ng-app="laurasBooksApp">
@@ -20,20 +21,57 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
+    <header class="navbar navbar-static-top laurasbooks-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="../" class="navbar-brand laurasbooks-nav--title">Laura's Books</a>
+        </div>
+      
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#" class="laurasbooks-nav--entry">Books</a>
+            </li>
+            <li>
+              <a href="#" class="laurasbooks-nav--entry">Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="laurasbooks-nav--entry">Blog</a>
+            </li>
         </ul>
-        <h3 class="text-muted">laurasBooks</h3>
+        </nav>
       </div>
+    </header>
 
-      <div ng-view=""></div>
+    <div class="bio">
+      <div class="image">
+      <img class="background-image" src="images/home_2.jpeg">
+    
+      
+        <p class="lead lead--white lead--titleone"><span class="highlight">Welcome to the home of Laura Higham, novelist, blogger and new mother.</span></p>
+      </div>
+    </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <div class="novels">
+      <img class="background-image" src="images/home_1.jpeg">
+        <p class="lead">This is where my stuff on Novels will go</p>
+    </div>
+
+    <div class="blog">
+      <div class="container">
+        <p class="lead">This is where my blog will go</p>
+      </div>
+    </div>
+
+    <div class="marketing">
+      <div class="container">
+        <p class="lead">This is where my eMarketing things will go</p>
       </div>
     </div>
 
