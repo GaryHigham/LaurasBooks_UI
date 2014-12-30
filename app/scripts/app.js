@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'btford.markdown'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,9 +24,21 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/books', {
+        templateUrl: 'views/books.html',
+        controller: 'BooksCtrl'
+      })
+      .when('/marketing', {
+        templateUrl: 'views/marketing.html',
+        controller: 'MarketingCtrl'
+      })
+      .when('/blogs', {
+        templateUrl: 'views/blogindex.html',
+        controller: 'BlogCtrl'
+      })
+      .when('/blogs/:blogid', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogEntryCtrl'
       })
       .otherwise({
         redirectTo: '/'
